@@ -1,14 +1,14 @@
 .header{
-    background-color: black;
+    background-color: #000000;
     border-bottom: 2px solid #f44336;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 68px;
     display: flex;
-    padding: .75rem;
     font-size: 1.5rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header span{
