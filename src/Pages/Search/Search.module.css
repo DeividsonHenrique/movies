@@ -1,0 +1,9 @@
+.search{
+    padding-top: 68px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search h2{
+    padding-bottom: 10px;
+}
