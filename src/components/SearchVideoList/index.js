@@ -8,7 +8,7 @@ function filterVideos(videos, searchText){
 
 function SearchVideoList( {videos} ){
 
-    const [searchText, setSearchText] = useState()
+    const [searchText, setSearchText] = useState('Geografia')
     const foundVideos = filterVideos(videos, searchText)
 
     return(
@@ -17,9 +17,13 @@ function SearchVideoList( {videos} ){
             <input
                 type="search"
                 placeholder="Pesquisar..."
-                onChange={}
+                value={searchText}
+                onChange={e => setSearchText(e.target.value)}
             />
-            <VideoList videos={videos} />
+            <VideoList 
+            videos={foundVideos} 
+            emptyHeading={`Sem videos sobre ${searchText}`}
+            />
         </section>
     )
 }
