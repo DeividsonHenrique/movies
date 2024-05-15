@@ -5,6 +5,7 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Carousel from "../../components/Carousel"
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
 
   return (
     <>
+    <ScrollToTopButton/>
     <Header/>
     <Banner image="favoritos"/>
     <Container>

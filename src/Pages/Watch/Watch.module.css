@@ -7,3 +7,10 @@ iframe{
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
 }
+
+@media (max-width: 1024px){
+    iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}

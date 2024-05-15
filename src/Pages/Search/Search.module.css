@@ -1,11 +1,8 @@
 .search{
     width: 100%;
     min-height: 781px;
-    padding-top: 68px;
+    padding-top: 88px;
     display: flex;
     flex-direction: column;
 }
 
-.search h2{
-    padding-bottom: 10px;
-}
