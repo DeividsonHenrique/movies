@@ -20,6 +20,11 @@ function Favorites(){
                     <h2>Meus Favoritos</h2>
                     { <VideoList videos={favorite} emptyHeading={"Sem Favoritos"} /> }
                     </section>
+
+                    <div className={styles.empty}>
+                        <img src="https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="empty" />
+                        
+                    </div>
             </Container>
             <Footer/>
         </>

@@ -1,3 +1,12 @@
 .favorites{
     padding-top: 88px;
 }
+
+.empty{
+    width: 100%;
+    height: auto;
+}
+
+.empty img{
+    height: 700px;
+}
