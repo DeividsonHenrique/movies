@@ -3,10 +3,7 @@
 }
 
 .empty{
-    width: 100%;
-    height: auto;
+    width: 20%;
+    height: 300px;
 }
 
-.empty img{
-    height: 700px;
-}
