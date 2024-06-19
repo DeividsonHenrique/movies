@@ -2,6 +2,13 @@
     padding-top: 88px;
 }
 
+.teste{
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
 section.image{
     display: flex;
     justify-content: center;
