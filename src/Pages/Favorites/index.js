@@ -5,6 +5,8 @@ import Footer from "../../components/Footer";
 import VideoList from "../../components/VideoList";
 import { useFavoriteContext } from "../../contexts/Favorites";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
+import Zoom from 'react-medium-image-zoom'
+
 
 function Favorites() {
   const { favorite } = useFavoriteContext();
@@ -19,9 +21,23 @@ function Favorites() {
           {<VideoList videos={favorite} emptyHeading={"Sem Favoritos"} />}
         </section>
 
-        <div className={styles.empty}>
-          <img src="https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="empty"/>
-        </div>
+        <section className={styles.image}>
+          <Zoom>
+          <div className={styles.image}>
+            <img src="https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+          </div>
+          </Zoom>
+          <Zoom>
+          <div className={styles.image}>
+            <img src="https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+          </div>
+          </Zoom>
+          <Zoom>
+          <div className={styles.image}>
+            <img src="https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+          </div>
+          </Zoom>
+          </section>
       </Container>
       <Footer />
     </>
