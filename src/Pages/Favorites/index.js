@@ -6,8 +6,9 @@ import VideoList from "../../components/VideoList";
 import { useFavoriteContext } from "../../contexts/Favorites";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 // import Zoom from 'react-medium-image-zoom'
-import ReactImageZoom from 'react-image-zoom';
+// import ReactImageZoom from 'react-image-zoom';
 import React from 'react';
+import ReactImageMagnify from 'react-image-magnify';
 
 
 
@@ -15,7 +16,7 @@ import React from 'react';
 
 function Favorites() {
 
-  const props = {width: 400, height: 500, img: "/images/banner-favoritos.png",  zoomPosition: "original"}
+  
 
   const { favorite } = useFavoriteContext();
   
@@ -48,9 +49,19 @@ function Favorites() {
           </section> */}
 
 
-          <div className={styles.teste}>
-          <ReactImageZoom {...props} />
-          </div>
+
+          <ReactImageMagnify {...{
+              smallImage: {
+                  alt: 'Wristwatch by Ted Baker London',
+                  isFluidWidth: true,
+                  src: require("https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+              },
+              largeImage: {
+                  src: require("https://images.pexels.com/photos/7947304/pexels-photo-7947304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                  width: 1200,
+                  height: 1800
+              }
+          }} />
           
           
       </Container>
