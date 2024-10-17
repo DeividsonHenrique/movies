@@ -1,13 +1,21 @@
-import styles from "./Banner.module.css"
+import styled from "styled-components";
 
-function Banner({ image }){
-    return(
-        <div 
-            className={styles.banner}
-            style={{ backgroundImage: `url('/images/banner-${image}.png')`}}
-        ></div>
-    );
+const BannerDiv = styled.div`
+  width: 100%;
+  height: 347px;
+  background-image: url(/public/images/banner-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 68px;
+`;
 
+function Banner({ image }) {
+  return (
+    <BannerDiv
+      style={{ backgroundImage: `url('/images/banner-${image}.png')` }}
+    ></BannerDiv>
+  );
 }
 
 export default Banner;

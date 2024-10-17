@@ -1,8 +1,0 @@
-.videos{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    gap: 5px;
-    margin-top: .5rem;
-}
